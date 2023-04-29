@@ -3,10 +3,10 @@ import Navbar from './Navbar'
 
 const Login = () => {
   return (
-    <div>Login
-
-
+    <div>
         <Navbar/>
+
+        login
     </div>
   )
 }
