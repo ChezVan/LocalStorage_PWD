@@ -6,7 +6,6 @@ const Register = () => {
     return (
 
         <div>
-            <Navbar />
 
             <section className="vh-100 bg-image">
                 <div className="mask d-flex align-items-center h-100 gradient-custom-3">
