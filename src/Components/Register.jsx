@@ -4,7 +4,7 @@ import '../App.css'
 
 const Register = () => {
 
-    const [input, setInput] = useState
+    const [input, setInput] = useState // use to store value after register and check if name is exist to allow login
     ({
         name: "", 
         email: "",
@@ -28,10 +28,10 @@ const Register = () => {
                                             <div className="form-outline mb-4"> 
                                                 <input 
 
-                                                name='name'
-                                                type="text" 
-                                                id="form3Example1cg" 
-                                                className="form-control form-control-lg" 
+                                                name='name' // name is the name that is used when the value is passed
+                                                type="text" // defines a single-line text field
+                                                id="form3Example1cg" // id is used to uniquely identify the element for CSS
+                                                className="form-control form-control-lg" // ClassName property that can by called on an element to get/set its class
                                                 />
                                                 <label className="form-label" for="form3Example1cg">Your Name</label>
                                             </div>
