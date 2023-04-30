@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import '../App.css'
 
 const Register = () => {
+
+    const [input, setInput] = useState
+    ({
+        name: "", 
+        email: "",
+        password: ""
+    })
     return (
 
         <div>
@@ -18,8 +25,14 @@ const Register = () => {
 
                                         <form>
 
-                                            <div className="form-outline mb-4">
-                                                <input type="text" id="form3Example1cg" className="form-control form-control-lg" />
+                                            <div className="form-outline mb-4"> 
+                                                <input 
+
+                                                name='name'
+                                                type="text" 
+                                                id="form3Example1cg" 
+                                                className="form-control form-control-lg" 
+                                                />
                                                 <label className="form-label" for="form3Example1cg">Your Name</label>
                                             </div>
 
