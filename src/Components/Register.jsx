@@ -13,7 +13,7 @@ const Register = () => {
 
     const handleSubmit = (e) =>
     {
-        e.preventDefault(); //prevent a browser reload/refresh cause missing value
+       e.preventDefault(); //prevent a browser reload/refresh and prevent text disappear from textBox
 
         localStorage.setItem("user", JSON.stringify(input))// object allows you to save key/value pairs in the browser.
     }
@@ -48,7 +48,7 @@ const Register = () => {
                                                 id="form3Example1cg" // id is used to uniquely identify the element for CSS
                                                 className="form-control form-control-lg" // ClassName property that can by called on an element to get/set its class
                                                 />
-                                                <label className="form-label" for="form3Example1cg">Your Name</label>
+                                                <label className="form-label" htmlFor="form3Example1cg">Your Name</label>
                                             </div>
 
                                             <div className="form-outline mb-4">
@@ -61,8 +61,8 @@ const Register = () => {
                                                     (e) => setInput({...input,[e.target.email] : e.target.value})
                                                 
                                                 }
-                                                 type="email" 
-                                                 id="form3Example3cg" 
+                                                 type="text" 
+                                                 id="form3Example1cg" 
                                                  className="form-control form-control-lg" />
                                                 <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
                                             </div>
