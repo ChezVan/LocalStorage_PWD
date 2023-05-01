@@ -13,9 +13,8 @@ const Register = () => {
 
     const handleSubmit = (e) =>
     {
-        e.preventDefault(); //prevent a browser reload/refresh
-
-
+        e.preventDefault(); //prevent a browser reload/refresh cause missing value
+        localStorage.setItem("user", JSON.stringify(input))
     }
     return (
 
@@ -30,7 +29,7 @@ const Register = () => {
                                     <div className="card-body p-5">
                                         <h2 className="text-uppercase text-center mb-5">Create an account</h2>
 
-                                        <form onSubmit={}>
+                                        <form onSubmit={handleSubmit}>
 
                                             <div className="form-outline mb-4"> 
                                                 <input 
