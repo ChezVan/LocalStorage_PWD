@@ -10,6 +10,8 @@ const Register = () => {
         email: "",
         password: ""
     })
+
+    setInput({})
     return (
 
         <div>
@@ -27,8 +29,15 @@ const Register = () => {
 
                                             <div className="form-outline mb-4"> 
                                                 <input 
-
                                                 name='name' // name is the name that is used when the value is passed
+                                                value={input.name} //
+                                                
+                                                onChange={ 
+                                                    
+                                                    (e) => setInput({...input,[e.target.name] : e.target.value})
+                                                
+                                                }
+
                                                 type="text" // defines a single-line text field
                                                 id="form3Example1cg" // id is used to uniquely identify the element for CSS
                                                 className="form-control form-control-lg" // ClassName property that can by called on an element to get/set its class
