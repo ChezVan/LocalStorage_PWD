@@ -14,7 +14,8 @@ const Register = () => {
     const handleSubmit = (e) =>
     {
         e.preventDefault(); //prevent a browser reload/refresh cause missing value
-        localStorage.setItem("user", JSON.stringify(input))
+
+        localStorage.setItem("user", JSON.stringify(input))// object allows you to save key/value pairs in the browser.
     }
     return (
 
@@ -34,6 +35,7 @@ const Register = () => {
                                             <div className="form-outline mb-4"> 
                                                 <input 
                                                 name='name' // name is the name that is used when the value is passed
+                                               
                                                 value={input.name} //
                                                 
                                                 onChange={ 
@@ -62,7 +64,7 @@ const Register = () => {
                                                  type="email" 
                                                  id="form3Example3cg" 
                                                  className="form-control form-control-lg" />
-                                                <label className="form-label" for="form3Example3cg">Your Email</label>
+                                                <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
                                             </div>
 
                                             <div className="form-outline mb-4">
@@ -80,17 +82,17 @@ const Register = () => {
                                                  id="form3Example4cg" 
                                                  className="form-control form-control-lg"
                                                   />
-                                                <label className="form-label" for="form3Example4cg">Password</label>
+                                                <label className="form-label" htmlFor="form3Example4cg">Password</label>
                                             </div>
 
                                             <div className="form-outline mb-4">
                                                 <input type="password" id="form3Example4cdg" className="form-control form-control-lg" />
-                                                <label className="form-label" for="form3Example4cdg">Repeat your password</label>
+                                                <label className="form-label" htmlFor="form3Example4cdg">Repeat your password</label>
                                             </div>
 
                                             <div className="form-check d-flex justify-content-center mb-5">
                                                 <input className="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                                                <label className="form-check-label" for="form2Example3g">
+                                                <label className="form-check-label" htmlFor="form2Example3g">
                                                     I agree all statements in <a href="#!" className="text-body"><u>Terms of service</u></a>
                                                 </label>
                                             </div>
