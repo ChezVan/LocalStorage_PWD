@@ -30,7 +30,9 @@ const Register = () => {
                                     <div className="card-body p-5">
                                         <h2 className="text-uppercase text-center mb-5">Create an account</h2>
 
-                                        <form onSubmit={handleSubmit}>
+                                        
+                                        <form onSubmit={handleSubmit} // it work well with button 
+                                        > 
 
                                             <div className="form-outline mb-4"> 
                                                 <input 
@@ -54,7 +56,7 @@ const Register = () => {
                                             <div className="form-outline mb-4">
                                                 <input
                                                 name='email' // name is the name that is used when the value is passed
-                                                value={input.email} //
+                                                defaultValue={input.email} // replace value to defaultValue, because unable to type in an input field by value property 
                                                 
                                                 onChange={ 
                                                     
@@ -70,7 +72,7 @@ const Register = () => {
                                             <div className="form-outline mb-4">
                                                 <input 
                                                  name='password' // name is the name that is used when the value is passed
-                                                 value={input.password} //
+                                                 defaultValue={input.password} // replace value to defaultValue, because unable to type in an input field by value property 
                                                  
                                                  onChange={ 
                                                      
@@ -99,7 +101,6 @@ const Register = () => {
 
                                             <div className="d-flex justify-content-center">
                                                 <button 
-                                                type="submit"
                                                 className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                                                 >Register
                                                 </button>
