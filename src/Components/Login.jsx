@@ -29,12 +29,36 @@ const Login = () => {
                     <form>
 
                       <div className="form-outline mb-4">
-                        <input type="email" id="form3Example3cg" className="form-control form-control-lg" />
+
+                        <input
+                          name='name' // name is the name that is used when the value is passed
+
+                          value={input.name} //
+
+                          onChange={
+
+                            (e) => setInput({ ...input, [e.target.name]: e.target.value })
+
+                          }
+                          type="email" id="form3Example3cg" className="form-control form-control-lg"
+                        />
+
                         <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
                       </div>
 
                       <div className="form-outline mb-4">
-                        <input type="password" id="form3Example4cg" className="form-control form-control-lg" />
+                        <input
+                          name='name' // name is the name that is used when the value is passed
+
+                          value={input.name} //
+
+                          onChange={
+
+                            (e) => setInput({ ...input, [e.target.name]: e.target.value })
+
+                          }
+                          type="password" id="form3Example4cg" className="form-control form-control-lg"
+                        />
                         <label className="form-label" htmlFor="form3Example4cg">Password</label>
                       </div>
 
