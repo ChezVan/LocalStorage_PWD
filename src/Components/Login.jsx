@@ -8,6 +8,13 @@ const Login = () => {
       email: "",
       password: ""
   })
+
+  const handleLogin = (e) =>
+  {
+    e.preventDefault();
+    const loggeduser = localStorage.getItem("user");
+
+  }
   return (
     <div>
         <Navbar/>
