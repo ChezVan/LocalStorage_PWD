@@ -16,6 +16,7 @@ const Register = () => {
        e.preventDefault(); //prevent a browser reload/refresh and prevent text disappear from textBox
 
         localStorage.setItem("user", JSON.stringify(input))// object allows you to save key/value pairs in the browser.
+        console.log(input)
     }
     return (
 
@@ -60,7 +61,7 @@ const Register = () => {
                                                 
                                                 onChange={ 
                                                     
-                                                    (e) => setInput({...input,[e.target.email] : e.target.value})
+                                                    (e) => setInput({...input,[e.target.name] : e.target.value})
                                                 
                                                 }
                                                  type="text" 
@@ -76,7 +77,7 @@ const Register = () => {
                                                  
                                                  onChange={ 
                                                      
-                                                     (e) => setInput({...input,[e.target.password] : e.target.value})
+                                                     (e) => setInput({...input,[e.target.name] : e.target.value})
                                                  
                                                  }
 
