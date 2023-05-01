@@ -46,7 +46,18 @@ const Register = () => {
                                             </div>
 
                                             <div className="form-outline mb-4">
-                                                <input type="email" id="form3Example3cg" className="form-control form-control-lg" />
+                                                <input
+                                                name='email' // name is the name that is used when the value is passed
+                                                value={input.name} //
+                                                
+                                                onChange={ 
+                                                    
+                                                    (e) => setInput({...input,[e.target.name] : e.target.value})
+                                                
+                                                }
+                                                 type="email" 
+                                                 id="form3Example3cg" 
+                                                 className="form-control form-control-lg" />
                                                 <label className="form-label" for="form3Example3cg">Your Email</label>
                                             </div>
 
