@@ -11,7 +11,12 @@ const Register = () => {
         password: ""
     })
 
+    const handleSubmit = (e) =>
+    {
+        e.preventDefault(); //prevent a browser reload/refresh
 
+
+    }
     return (
 
         <div>
@@ -25,7 +30,7 @@ const Register = () => {
                                     <div className="card-body p-5">
                                         <h2 className="text-uppercase text-center mb-5">Create an account</h2>
 
-                                        <form>
+                                        <form onSubmit={}>
 
                                             <div className="form-outline mb-4"> 
                                                 <input 
