@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Login from './Components/Login';
 import Register from './Components/Register';
-import App from './App'
+import { Home } from './Pages/Home';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,7 +11,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Home/>,
   },
   {
     path: "/login",

@@ -1,10 +1,10 @@
 
 import '../App.css'
 import React, { useState } from 'react'
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  // const nav = useNavigate();
+  const nav = useNavigate();
 
   const [input, setInput] = useState //  check if name is exist to let login
     ({
@@ -17,19 +17,17 @@ const Login = () => {
     e.preventDefault();
     const loggeduser = JSON.parse(localStorage.getItem("user"));
 
-    console.log("input")
-
-    // if (input.email === loggeduser.email && 
-    //   input.password && 
-    //   loggeduser.password ) 
-    // {
-    //   // nav('/')
-    //   console.log('login successfully')
-    // }
-    // else
-    // {
-    //   console.log('No Found')
-    // }
+    if (input.email === loggeduser.email && 
+      input.password === 
+      loggeduser.password ) 
+    {
+      nav('/')
+      
+    }
+    else
+    {
+      console.log('No Found')
+    }
   };
 
   return (
