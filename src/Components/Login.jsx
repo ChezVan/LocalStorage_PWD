@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     const loggeduser = JSON.parse(localStorage.getItem("user"));
 
-    if (input.email === loggeduser.email && 
+    if (input.email === loggeduser.email && // check if user available in local storage
       input.password === 
       loggeduser.password ) 
     {
