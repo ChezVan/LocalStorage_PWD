@@ -32,7 +32,7 @@ export const Home = () => {
                       <button type="button"
                       onClick={handleLogout}
                       className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                      >
+                      >Log out
                       </button>
 
                     </form>
