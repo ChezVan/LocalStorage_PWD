@@ -12,18 +12,10 @@ const Login = () => {
       password: ""
     })
 
-    function test() {
-
-      alert('test')
-      console.log("jhghjkioiuytrtyuioiuyt")
-      
-    }
-
-
 
   const handleLogin = (e) => {
-    // e.preventDefault();
-    // const loggeduser = JSON.parse(localStorage.getItem("user"));
+    e.preventDefault();
+    const loggeduser = JSON.parse(localStorage.getItem("user"));
 
     console.log("input")
 
@@ -51,7 +43,7 @@ const Login = () => {
                   <div className="card-body p-5">
                     <h2 className="text-uppercase text-center mb-5">Login</h2>
 
-                    <form onSubmit={test}>
+                    <form onSubmit={handleLogin}>
 
                       <div className="form-outline mb-4">
 
