@@ -22,7 +22,7 @@ const Register = () => {
         <div>
 
             <section className="vh-100 bg-image">
-                <div className="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div className="mask d-flex align-items-center h-100">
                     <div className="container h-100">
                         <div className="row d-flex justify-content-center align-items-center h-100">
                             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
@@ -45,7 +45,6 @@ const Register = () => {
                                                     (e) => setInput({...input,[e.target.name] : e.target.value})
                                                 
                                                 }
-
                                                 type="text" // defines a single-line text field
                                                 id="form3Example1cg" // id is used to uniquely identify the element for CSS
                                                 className="form-control form-control-lg" // ClassName property that can by called on an element to get/set its class

@@ -15,8 +15,11 @@ const Login = () => {
     function test() {
 
       alert('test')
+      console.log("jhghjkioiuytrtyuioiuyt")
       
     }
+
+
 
   const handleLogin = (e) => {
     // e.preventDefault();
@@ -40,7 +43,7 @@ const Login = () => {
   return (
     <div>
       <section className="vh-100 bg-image">
-        <div className="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div className="mask d-flex align-items-center h-100">
           <div className="container h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
@@ -85,7 +88,7 @@ const Login = () => {
                       </div>
 
                       <div className="d-flex justify-content-center">
-                        <button type="button"
+                        <button type="submit"
                           className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
                       </div>
 
@@ -93,7 +96,6 @@ const Login = () => {
                         className="fw-bold text-body"><u>Register here</u></a></p>
 
                     </form>
-
                   </div>
                 </div>
               </div>
