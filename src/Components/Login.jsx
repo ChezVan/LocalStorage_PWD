@@ -21,11 +21,13 @@ const Login = () => {
       input.password === 
       loggeduser.password ) 
     {
+      localStorage.setItem("loggedin", true) // to show your name in hoePage
+
       nav('/') // navigate to homepage after login successfully
     }
     else
     {
-      console.log('No Found')
+      alert('No Found')
     }
   };
 
