@@ -107,7 +107,7 @@ const Register = () => {
                                             </div>
 
                                             <p className="text-center text-muted mt-5 mb-0">Have already an account? 
-                                                <Link href="/login"
+                                                <Link to="/login"
                                                     className="fw-bold text-body"><u>Login here</u>
                                                 </Link>
                                             </p>

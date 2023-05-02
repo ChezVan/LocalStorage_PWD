@@ -84,7 +84,7 @@ const Login = () => {
                       </div>
 
                       <p className="text-center text-muted mt-5 mb-0">Don't have an account? 
-                      <Link href="/register"
+                      <Link to="/register"
                         className="fw-bold text-body"><u>Register here</u>
                       </Link>
                       </p>
