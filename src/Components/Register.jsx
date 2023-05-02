@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../App.css'
+import { Link } from "react-router-dom";
 
 const Register = () => {
 
@@ -105,8 +106,11 @@ const Register = () => {
                                                 </button>
                                             </div>
 
-                                            <p className="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
-                                                className="fw-bold text-body"><u>Login here</u></a></p>
+                                            <p className="text-center text-muted mt-5 mb-0">Have already an account? 
+                                                <Link href="/login"
+                                                    className="fw-bold text-body"><u>Login here</u>
+                                                </Link>
+                                            </p>
 
                                         </form>
 

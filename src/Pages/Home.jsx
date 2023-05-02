@@ -9,7 +9,7 @@ export const Home = () => {
 
   const handleLogout = () =>
   {
-    localStorage.removeItem("loggedin")
+    localStorage.removeItem("loggedin") 
     nav('/login')
       
   }

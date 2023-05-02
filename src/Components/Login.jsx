@@ -1,7 +1,7 @@
 
 import '../App.css'
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const nav = useNavigate();
@@ -83,8 +83,11 @@ const Login = () => {
                           className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
                       </div>
 
-                      <p className="text-center text-muted mt-5 mb-0">Don't have an account? <a href="#!"
-                        className="fw-bold text-body"><u>Register here</u></a></p>
+                      <p className="text-center text-muted mt-5 mb-0">Don't have an account? 
+                      <Link href="/register"
+                        className="fw-bold text-body"><u>Register here</u>
+                      </Link>
+                      </p>
 
                     </form>
                   </div>
