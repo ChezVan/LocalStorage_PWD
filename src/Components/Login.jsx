@@ -21,8 +21,7 @@ const Login = () => {
       input.password === 
       loggeduser.password ) 
     {
-      nav('/')
-      
+      nav('/') // navigate to homepage after login successfully
     }
     else
     {
