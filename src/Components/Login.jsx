@@ -14,16 +14,15 @@ const Login = () => {
 
 
   const handleLogin = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const loggeduser = JSON.parse(localStorage.getItem("user"));
 
     if (input.email === loggeduser.email && // check if user available in local storage
-      input.password === 
-      loggeduser.password ) 
+      input.password ===  loggeduser.password ) 
     {
       localStorage.setItem("loggedin", true) // to show your name in hoePage
 
-      nav('/') // navigate to homepage after login successfully
+      nav('/home') // navigate to homepage after login successfully
     }
     else
     {

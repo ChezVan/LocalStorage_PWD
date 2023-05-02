@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 export const Home = () => {
   const nav = useNavigate();
 
-  const userName = JSON.parse(localStorage.getItem("user"));
+  const userName = JSON.parse(localStorage.getItem("user")); // get value from broswer's local storage
 
   const handleLogout = () =>
   {
     localStorage.removeItem("loggedin") 
-    nav('/login')
+    nav('/')
       
   }
   return (
