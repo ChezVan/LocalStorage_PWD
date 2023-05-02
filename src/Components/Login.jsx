@@ -1,8 +1,10 @@
 
 import '../App.css'
 import React, { useState } from 'react'
+// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  // const nav = useNavigate();
 
   const [input, setInput] = useState //  check if name is exist to let login
     ({
@@ -10,11 +12,31 @@ const Login = () => {
       password: ""
     })
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    const loggeduser = localStorage.getItem("user");
+    function test() {
 
-  }
+      alert('test')
+      
+    }
+
+  const handleLogin = (e) => {
+    // e.preventDefault();
+    // const loggeduser = JSON.parse(localStorage.getItem("user"));
+
+    console.log("input")
+
+    // if (input.email === loggeduser.email && 
+    //   input.password && 
+    //   loggeduser.password ) 
+    // {
+    //   // nav('/')
+    //   console.log('login successfully')
+    // }
+    // else
+    // {
+    //   console.log('No Found')
+    // }
+  };
+
   return (
     <div>
       <section className="vh-100 bg-image">
@@ -26,14 +48,14 @@ const Login = () => {
                   <div className="card-body p-5">
                     <h2 className="text-uppercase text-center mb-5">Login</h2>
 
-                    <form>
+                    <form onSubmit={test}>
 
                       <div className="form-outline mb-4">
 
                         <input
-                          name='name' // name is the name that is used when the value is passed
+                          name='email' // name is the name that is used when the value is passed
 
-                          value={input.name} //
+                          defaultValue={input.email} //
 
                           onChange={
 
@@ -48,9 +70,9 @@ const Login = () => {
 
                       <div className="form-outline mb-4">
                         <input
-                          name='name' // name is the name that is used when the value is passed
+                          name='password' // name is the name that is used when the value is passed
 
-                          value={input.name} //
+                          defaultValue={input.password} //
 
                           onChange={
 
@@ -63,7 +85,7 @@ const Login = () => {
                       </div>
 
                       <div className="d-flex justify-content-center">
-                        <button
+                        <button type="button"
                           className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
                       </div>
 
