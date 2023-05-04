@@ -6,19 +6,17 @@ import { useNavigate, Link } from "react-router-dom";
 const Login = () => {
   const nav = useNavigate();
 
-  const [input, setInput] = useState //  check if name is exist to let login
-    ({
-      email: "",
-      password: ""
-    })
-
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleLogin = (e) => {
-    // e.preventDefault();
+
+    e.preventDefault();
+
     const loggeduser = JSON.parse(localStorage.getItem("user"));
 
-    if (input.email === loggeduser.email && // check if user available in local storage
-      input.password ===  loggeduser.password ) 
+    if (email === loggeduser.email && // check if user available in local storage
+      password ===  loggeduser.password ) 
     {
       localStorage.setItem("loggedin", true) // to show your name in hoePage
 
@@ -48,11 +46,11 @@ const Login = () => {
                         <input
                           name='email' // name is the name that is used when the value is passed
 
-                          defaultValue={input.email} //
+                          defaultValue={email} //
 
                           onChange={
 
-                            (e) => setInput({ ...input, [e.target.name]: e.target.value })
+                            (e) => setEmail(e.target.value)
 
                           }
                           type="email" id="form3Example3cg" className="form-control form-control-lg"
@@ -65,11 +63,11 @@ const Login = () => {
                         <input
                           name='password' // name is the name that is used when the value is passed
 
-                          defaultValue={input.password} //
+                          defaultValue={password} //
 
                           onChange={
 
-                            (e) => setInput({ ...input, [e.target.name]: e.target.value })
+                            (e) => setPassword(e.target.value) // get value from 
 
                           }
                           type="password" id="form3Example4cg" className="form-control form-control-lg"
